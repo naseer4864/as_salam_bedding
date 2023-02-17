@@ -13,7 +13,7 @@ export default function SimpleSlider() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay:true,
+    // autoplay:true,
     autoplaySpeed:2000
   };
   const navigate = useNavigate()
@@ -22,7 +22,6 @@ export default function SimpleSlider() {
     }
   
   return (
-    <div className="slider">
       <Slider {...settings}>
         {SliderData.map((data) => {
           return(
@@ -33,6 +32,6 @@ export default function SimpleSlider() {
           )
         })}
       </Slider>
-    </div>
+  
   );
 }

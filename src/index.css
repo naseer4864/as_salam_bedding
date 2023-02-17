@@ -674,24 +674,15 @@ form>p {
 
 .card-slider {
     max-width: 100%;
-    height: 450px;
-
+    height: fit-content;
 }
 
-.slider {
-    max-width: 100%;
-    height: 400px;
-
-}
 
 .slider-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    max-width: 100%;
+    width: 100%;
     height: 400px;
     text-align: center;
+
 }
 
 
@@ -704,19 +695,21 @@ form>p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 30px;
     overflow-x: hidden;
 }
 
 .slider-img {
     width: 100%;
     height: 400px;
+    
 }
 
 
 
 .slider-info  {
     position: relative;
-    bottom: 50%;
+    top: -50%;
     background-color: rgb(17, 32, 35);
     padding: 12px 20px;
     color: white;
@@ -730,7 +723,6 @@ form>p {
     .card-slider {
         max-width: 100%;
         height: 310px;
-        margin-bottom: 20px;
        
     }
 
@@ -744,17 +736,6 @@ form>p {
         max-width: 100%;
     }
 
-    .slider-info  {
-        position: relative;
-        bottom: 50%;
-        background-color: rgb(17, 32, 35);
-        padding: 12px 20px;
-        color: white;
-        cursor: pointer;
-        opacity: 0.8;
-        border-radius: 3px;
-    
-    }
 }
 
 .reset-password-container {
@@ -801,7 +782,6 @@ form>p {
     justify-content: space-between;
     align-items: center;
     background-color: rgb(40, 46, 47);
-    margin-top: 20px;
 }
 
 a {

@@ -10,7 +10,6 @@ const PasswordReset = () => {
   const [formFeild, setFormField] = useState(defaultformField);
   const [error, setError]= useState(false)
   const { email } = formFeild
-  // console.log(formFeild)
   const navigate = useNavigate()
 
   const resetForm = () => {

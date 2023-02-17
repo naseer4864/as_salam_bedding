@@ -19,7 +19,7 @@ const Footer = () => {
                 </div>
                 <div className="email">
                 <FontAwesomeIcon icon={faEnvelope} className="footer-icon" />
-                <a href="maito:titilopeluxury">Email us</a>
+                <a href="mailto:titilopeluxury">Email us</a>
                 </div>
                 <div className="ins">
                 <FontAwesomeIcon icon={faHashtag} className="footer-icon" />
