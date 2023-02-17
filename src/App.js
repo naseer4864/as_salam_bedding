@@ -8,16 +8,17 @@ import SignUp from './component/routers/SignUp';
 import CheckOut from './component/checkout/checkout';
 import PasswordReset from './component/resetpassword/resetpassword';
 import Footer from './component/footer/footer';
+import AboutUs from './component/about-us/about-us';
 import { useEffect } from 'react';
 
 
 
 
 function App() {
-  
- useEffect(() => {
-  window.scrollTo(0,0)
- }, [])
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div>
       <Routes>
@@ -28,6 +29,7 @@ function App() {
           <Route path='Shop/*' element={<Shop />} />
           <Route path='PasswordReset' element={<PasswordReset />} />
           <Route path='CheckOut' element={<CheckOut />} />
+          <Route path='about-us' element={<AboutUs />} />
         </Route>
       </Routes>
       <Footer />

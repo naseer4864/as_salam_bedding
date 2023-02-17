@@ -3,13 +3,13 @@ import { useContext } from "react";
 import { CartContext } from "../../context/cart.context";
 
 const Shipping = () => {
+  const {totalCart} = useContext(CartContext)
     const [price, setPrice] = useState(0);
-    const {totalCart} = useContext(CartContext)
   
     useEffect(() => {
         if (totalCart === 4000) {
           setPrice(1500);
-        } else if(totalCart > 8000 ){
+        } else if(totalCart >= 8000 ){
           setPrice(4000)
         } 
     }, [setPrice, totalCart])

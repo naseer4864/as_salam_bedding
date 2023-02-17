@@ -17,25 +17,30 @@ import Account from "../account/account";
 const Navbar = () => {
     const [isMobile, setIsmobile] = useState(false)
     const { isCartOpen, isUserOpen } = useContext(CartContext)
-   
+
     return (
         <Fragment>
             <div className="navigation">
-                <Link to="/" className="logo-container">
-                    <img src={logo} alt="" className="logo" />
-                </Link>
+                <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                    <div className="mobile-menu-icon" onClick={() => setIsmobile(!isMobile)}>
+                        {isMobile ? <FontAwesomeIcon icon={faXmark} /> : <FontAwesomeIcon icon={faBars} />}
+                        <div className={isMobile ? "nav-links-mobile" : "nav-links"} onClick={() => setIsmobile(true)}>
+                            <Link to="/about-us" className="nav-links-con">ABOUT US</Link>
+                        </div>
+                    </div>
+                    <Link to="/" className="logo-container">
+                        <p style={{ fontWeight: "bolder", color: "white" }}>AS_salam</p>
+                        <img src={logo} alt="" className="logo" />
+                    </Link>
+                </div>
+
                 <div className="nav-links-container">
-                    <div className={isMobile ? "nav-links-mobile" : "nav-links"} onClick={() => setIsmobile(false)}>
-                        <Link to="/Shop" className="nav-links-con">SHOP</Link>
+                    <Link to="/about-us" className="nav-links">About Us</Link>
                     <Account />
                     <CartIcon />
-                    </div>
                 </div>
                 {isCartOpen && <CartDropdown />}
                 {isUserOpen && <UserDropDown />}
-                <div className="mobile-menu-icon" onClick={() => setIsmobile(!isMobile)}>
-                    {isMobile ? <FontAwesomeIcon icon={faXmark} /> : <FontAwesomeIcon icon={faBars} />}
-                </div>
             </div>
             <Outlet />
         </Fragment>

@@ -1,7 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAuth, signInWithPopup, createUserWithEmailAndPassword,
 GoogleAuthProvider, signInWithEmailAndPassword ,
-signInWithRedirect, signOut, onAuthStateChanged, sendPasswordResetEmail,} from "firebase/auth";
+signInWithRedirect, signOut, onAuthStateChanged, sendPasswordResetEmail} from "firebase/auth";
 import { doc, getFirestore, getDoc, setDoc, collection, writeBatch, query,getDocs } from "firebase/firestore"
 
 
