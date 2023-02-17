@@ -22,7 +22,7 @@ const AboutUs = () => {
                 <input type="text" placeholder="Full Name"  name="name" />
                 <input type="email" placeholder="Email"  name="email"  />
                 <input type="number" placeholder="Number" name="number" />
-                <select className="select" name="seggestion" style={{ minWidth: "60%", height: "30px", border: "none", outline: "none", }}>
+                <select className="select" name="seggestion" style={{ minWidth: "60%", height: "30px", border: "none", outline: "none", color:"gray" }}>
                     <option >Suggestion</option>
                     <option >Join us</option>
                 </select>

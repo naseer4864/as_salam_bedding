@@ -152,6 +152,7 @@
     border: 2px solid gray;
     gap: 10px;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 
@@ -684,6 +685,10 @@ form>p {
 }
 
 .slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     max-width: 100%;
     height: 400px;
     text-align: center;
@@ -708,16 +713,16 @@ form>p {
 }
 
 
-.slider-info {
+
+.slider-info  {
     position: relative;
     bottom: 50%;
     background-color: rgb(17, 32, 35);
-    padding: 30px 20px;
-    text-align: center;
+    padding: 12px 20px;
     color: white;
     cursor: pointer;
     opacity: 0.8;
-    padding: 30px;
+    border-radius: 3px;
 
 }
 
@@ -732,12 +737,23 @@ form>p {
     .slider-img {
        max-width: 100%;
         height: 300px;
-        display: none;
     }
 
     .slider-container {
         height: 300px;
         max-width: 100%;
+    }
+
+    .slider-info  {
+        position: relative;
+        bottom: 50%;
+        background-color: rgb(17, 32, 35);
+        padding: 12px 20px;
+        color: white;
+        cursor: pointer;
+        opacity: 0.8;
+        border-radius: 3px;
+    
     }
 }
 
