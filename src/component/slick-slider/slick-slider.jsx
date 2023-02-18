@@ -26,8 +26,7 @@ export default function SimpleSlider() {
         {SliderData.map((data) => {
           return(
             <div key={data.id} className="slider-container">
-              <img src={data.imageLink} alt="" className="slider-img"/>
-                <span onClick={handleSlider} className="slider-info">{data.name}</span>
+              <img onClick={handleSlider} src={data.imageLink} alt="" className="slider-img"/>
             </div>
           )
         })}

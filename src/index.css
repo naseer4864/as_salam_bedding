@@ -53,7 +53,9 @@
     display: none;
 }
 
-
+.nav-links {
+    margin: 10px;
+}
 
 @media screen and (max-width:768px) {
     .nav-links {
@@ -707,18 +709,6 @@ form>p {
 
 
 
-.slider-info  {
-    position: relative;
-    bottom: 50%;
-    background-color: rgb(17, 32, 35);
-    padding: 12px 20px;
-    color: white;
-    cursor: pointer;
-    opacity: 0.8;
-    border-radius: 3px;
-
-}
-
 @media screen and (max-width:768px) {
     .card-slider {
         max-width: 100%;
@@ -737,17 +727,6 @@ form>p {
         text-align: center;
     }
 
-    .slider-info  {
-        position: relative;
-        bottom: 50%;
-        background-color: rgb(17, 32, 35);
-        padding: 12px 20px;
-        color: white;
-        cursor: pointer;
-        opacity: 0.8;
-        border-radius: 3px;
-    
-    }
 
 }
 

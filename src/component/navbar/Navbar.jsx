@@ -35,6 +35,7 @@ const Navbar = () => {
                 </div>
 
                 <div className="nav-links-container">
+                    <Link to="/Shop" >Shop</Link>
                     <Link to="/about-us" className="nav-links">About Us</Link>
                     <Account />
                     <CartIcon />
