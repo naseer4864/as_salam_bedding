@@ -709,8 +709,8 @@ form>p {
 
 
 .slider-container > span {
-    position: relative;
-    top: -50%;
+    position: absolute;
+    top: 50%;
     background-color: rgb(17, 32, 35);
     color: white;
     opacity: 0.9;
@@ -737,7 +737,16 @@ form>p {
         text-align: center;
     }
 
-
+    .slider-container > span {
+        position: absolute;
+        top: 50%;
+        background-color: rgb(17, 32, 35);
+        color: white;
+        opacity: 0.9;
+        padding: 10px 15px;
+        border-radius: 5px;
+    
+    }
 }
 
 .reset-password-container {
