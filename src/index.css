@@ -719,7 +719,7 @@ form>p {
 
 }
 
-@media screen and (max-width:768px) {
+/* @media screen and (max-width:768px) {
     .card-slider {
         max-width: 100%;
         height: 310px;
@@ -738,7 +738,7 @@ form>p {
     }
 
 
-}
+} */
 
 .reset-password-container {
     width: 100%;
