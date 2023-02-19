@@ -710,7 +710,7 @@ form>p {
 
 .slider-container > span {
     position: relative;
-    bottom: 50% !important;
+    top: -50%;
     background-color: rgb(17, 32, 35);
     color: white;
     opacity: 0.9;
@@ -719,7 +719,7 @@ form>p {
 
 }
 
-/* @media screen and (max-width:768px) {
+@media screen and (max-width:768px) {
     .card-slider {
         max-width: 100%;
         height: 310px;
@@ -738,7 +738,7 @@ form>p {
     }
 
 
-} */
+}
 
 .reset-password-container {
     width: 100%;
