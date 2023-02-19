@@ -679,6 +679,10 @@ form>p {
     height: fit-content;
 }
 
+.slider {
+    width: 100%;
+    height: 400px;
+}
 
 .slider-container {
     width: 100%;
