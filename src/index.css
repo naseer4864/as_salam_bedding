@@ -711,6 +711,7 @@ form>p {
 .slider-container > span {
     position: absolute;
     top: 50%;
+    transform: translateX(-57px);
     background-color: rgb(17, 32, 35);
     color: white;
     opacity: 0.9;
@@ -735,17 +736,6 @@ form>p {
         height: 300px;
         max-width: 100%;
         text-align: center;
-    }
-
-    .slider-container > span {
-        position: absolute;
-        top: 50%;
-        background-color: rgb(17, 32, 35);
-        color: white;
-        opacity: 0.9;
-        padding: 10px 15px;
-        border-radius: 5px;
-    
     }
 }
 

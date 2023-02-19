@@ -26,6 +26,7 @@ const Navbar = () => {
                         {isMobile ? <FontAwesomeIcon icon={faXmark} /> : <FontAwesomeIcon icon={faBars} />}
                         <div className={isMobile ? "nav-links-mobile" : "nav-links"} onClick={() => setIsmobile(true)}>
                             <Link to="/about-us" className="nav-links-con">ABOUT US</Link>
+                            <Link to="/Shop" className="nav-links-con" >SHOP</Link>
                         </div>
                     </div>
                     <Link to="/" className="logo-container">
@@ -35,7 +36,6 @@ const Navbar = () => {
                 </div>
 
                 <div className="nav-links-container">
-                    <Link to="/Shop" >Shop</Link>
                     <Link to="/about-us" className="nav-links">About Us</Link>
                     <Account />
                     <CartIcon />
