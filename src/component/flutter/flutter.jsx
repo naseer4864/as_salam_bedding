@@ -5,6 +5,7 @@ import { CartContext } from '../../context/cart.context';
 import { useContext } from 'react';
 
 
+
 export default function FlutterWave() {
   const {totalCart} = useContext(CartContext)
   const public_key=process.env.REACT_APP_FLUTTERWAVE_PUBLIC_KEY

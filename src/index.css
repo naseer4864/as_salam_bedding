@@ -708,6 +708,16 @@ form>p {
 }
 
 
+.slider-container > span {
+    position: relative;
+    bottom: 50% !important;
+    background-color: rgb(17, 32, 35);
+    color: white;
+    opacity: 0.9;
+    padding: 10px 15px;
+    border-radius: 5px;
+
+}
 
 @media screen and (max-width:768px) {
     .card-slider {
