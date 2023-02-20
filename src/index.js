@@ -5,14 +5,14 @@ import App from './App';
 import { UserProvider } from './context/firebase.context';
 import { CategoriesProvider } from './context/categories.context';
 import reportWebVitals from './reportWebVitals';
-// import { BrowserRouter } from 'react-router-dom';
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
+
 import { CartProvider } from './context/cart.context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <HashRouter>
+    <BrowserRouter>
       <UserProvider>
         <CategoriesProvider>
           <CartProvider>
@@ -20,7 +20,7 @@ root.render(
           </CartProvider>
         </CategoriesProvider>
       </UserProvider>
-    </HashRouter>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
