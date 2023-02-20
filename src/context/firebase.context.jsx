@@ -4,11 +4,11 @@ import { onAuthStateChangedListener, createUserDocRef } from "../component/fireb
 
 export const UserContext = createContext({
     currentUser: null,
-    setcurrentUser: () => null
+    setcurrentUser: () => null,
 })
 
 export const UserProvider = ({children}) => {
-    const [currentUser, setcurrentUser] = useState(null)
+    const [currentUser, setcurrentUser] = useState(null);
     const value = {currentUser, setcurrentUser}
 
     useEffect(() => {

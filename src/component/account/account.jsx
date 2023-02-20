@@ -9,7 +9,7 @@ const Account = () => {
     const togleIsuerOpen = () => setIsUserOpen(!isUserOpen)
     return (
         <div className="account-container" onClick={togleIsuerOpen}>
-            <FontAwesomeIcon icon={faUser} />
+           signIn <FontAwesomeIcon icon={faUser} />
         </div>
     );
 }

@@ -6,7 +6,6 @@ import { UserProvider } from './context/firebase.context';
 import { CategoriesProvider } from './context/categories.context';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
-
 import { CartProvider } from './context/cart.context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
