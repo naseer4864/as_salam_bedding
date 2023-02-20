@@ -5,7 +5,9 @@ import SliderData from "../../slider.data";
 import { useNavigate } from "react-router-dom";
 
 
+
 export default function SimpleSlider() {
+
   var settings = {
     dots: true,
     infinite: true,
@@ -13,7 +15,7 @@ export default function SimpleSlider() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000
+    autoplaySpeed: 3000,
   };
   const navigate = useNavigate()
   const handleSlider = () => {
@@ -26,7 +28,7 @@ export default function SimpleSlider() {
         {SliderData.map((data) => {
           return (
             <div key={data.id} className="slider-container">
-              <img src={data.imageLink} loading="lazy" alt="product-pics" className="slider-img" />
+              <img src={data.imageLink} alt="product-pics" className="slider-img"/>
               <span onClick={handleSlider}>SHOP NOW</span>
             </div>
           )

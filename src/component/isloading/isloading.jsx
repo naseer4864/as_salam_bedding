@@ -1,27 +1,12 @@
-import { useState, useEffect } from 'react';
-import { Route } from 'react-router-dom';
+import isloading from "../../asset/isloading indicator.gif"
 
-function LoadingRoute({ component: Component, ...rest }) {
-  const [isloading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    window.addEventListener('load', () => {
-      setIsLoading(false);
-    });
-  }, []);
-
-  return (
-    <Route
-      {...rest}
-      render={(props) =>
-        isloading ?  <div className='isloading'>
-        <img src={isloading} alt="load"  style={{height:"70px"}}/>
-      </div>
-         : <Component {...props} />
-      }
-    />
-  );
+const LazyLoading = () => {
+  return ( 
+    <div>
+      <img src={isloading} alt="load" />
+    </div>
+   );
 }
-
-export default LoadingRoute;
-     
+ 
+export default LazyLoading;

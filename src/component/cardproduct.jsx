@@ -3,7 +3,9 @@ import { useNavigate } from "react-router-dom";
 const CardProduct = ({Store}) => {
     const {title, imageUrl, route} = Store
     const navigate= useNavigate();
-    const onNavigateHandler = () => navigate(route)
+    const onNavigateHandler = () => {
+      navigate(route);
+    } 
     return ( 
         <div>
             <div className="container" onClick={onNavigateHandler}>
