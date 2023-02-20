@@ -26,7 +26,7 @@ export default function SimpleSlider() {
         {SliderData.map((data) => {
           return (
             <div key={data.id} className="slider-container">
-              <img src={data.imageLink} alt="product-pics" className="slider-img" />
+              <img src={data.imageLink} loading="lazy" alt="product-pics" className="slider-img" />
               <span onClick={handleSlider}>SHOP NOW</span>
             </div>
           )
