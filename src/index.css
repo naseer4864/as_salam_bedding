@@ -787,6 +787,7 @@ form>p {
     justify-content: space-between;
     align-items: center;
     background-color: rgb(40, 46, 47);
+    margin-top: 50px;
 }
 
 a {
