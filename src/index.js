@@ -7,6 +7,7 @@ import { CategoriesProvider } from './context/categories.context';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { CartProvider } from './context/cart.context';
+import 'normalize.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
