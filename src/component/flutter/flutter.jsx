@@ -3,11 +3,13 @@ import { useEffect, useState} from 'react';
 import { useFlutterwave, closePaymentModal } from 'flutterwave-react-v3';
 import { CartContext } from '../../context/cart.context';
 import { useContext } from 'react';
+import { UserContext } from '../../context/firebase.context';
 
 
 
 export default function FlutterWave() {
   const {totalCart} = useContext(CartContext)
+  const {currentUser} = useContext(UserContext)
   const public_key=process.env.REACT_APP_FLUTTERWAVE_PUBLIC_KEY
   const [price, setPrice] = useState(0);
   
@@ -25,9 +27,9 @@ export default function FlutterWave() {
     currency: 'NGN',
     payment_options: 'card,mobilemoney,ussd',
     customer: {
-      email: 'user@gmail.com',
-       phone_number: '070********',
-      name: 'john doe',
+      email: currentUser.email,
+       phone_number: currentUser.phone_number,
+      name: currentUser.displayName,
     },
     customizations: {
       title: 'Asalam_store.',
@@ -45,7 +47,7 @@ export default function FlutterWave() {
           handleFlutterPayment({
             callback: (response) => {
                console.log(response);
-                closePaymentModal() // this will close the modal programmatically
+                closePaymentModal() 
             },
             onClose: () => {},
           });

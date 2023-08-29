@@ -10,6 +10,7 @@ import { useNavigate } from "react-router-dom";
 const defaultformField = {
     displayName: "",
     email: "",
+    phone_number: "",
     password: "",
     confirmPassword: ""
 }
@@ -17,7 +18,7 @@ const defaultformField = {
 
 const SignUp = () => {
     const [formField, setFormField] = useState(defaultformField);
-    const { displayName, email, password, confirmPassword } = formField;
+    const { displayName, email,phone_number, password, confirmPassword } = formField;
     const [showPassword, setShowpassword] = useState(false);
     const [error, setError]= useState(false)
     const {currentUser} = useContext(UserContext)
@@ -74,6 +75,8 @@ const SignUp = () => {
 
 
                     <input required type="email" onChange={handleOnchange} name="email" value={email} placeholder="Email" />
+
+                    <input required type="tel" onChange={handleOnchange} name="phone_number" value={phone_number} placeholder="Email" />
 
                     <div className="passwords">
                         <input required type={showPassword ? "text" : "password"} onChange={handleOnchange} name="password" value={password} placeholder="Password" />
